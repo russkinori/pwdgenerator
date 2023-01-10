@@ -88,6 +88,16 @@ var specialCharacters = [
     'Z'
   ];
 
+// Prompt the user to select a password length between 10 and 64
+  //Validate that the correct length was selected
+// Prompt the user to decide on upper case characters
+// Prompt the user to decide on lower case characters
+// Prompt the user to decide on special characters
+//Ensure that at least one character type is selected
+// Collate user selections into an empty array
+// Display the randomly generated password in an alert or written on the page
+
+
   // Function to prompt user for password options
 function getPasswordOptions() {
 
