@@ -97,11 +97,16 @@ var specialCharacters = [
 // Collate user selections into an empty array
 // Display the randomly generated password in an alert or written on the page
 
+// Create an empty array to hold the randomly generated passwords
+let characterSet = [];
 
   // Function to prompt user for password options
 function getPasswordOptions() {
 
     
+    let promptUser = prompt("Choose password length");          //Prompt the user to choose a password length
+    return promptUser;              //return the value of the promptuser variable
+
     };
  
     
@@ -129,7 +134,7 @@ function getPasswordOptions() {
     
     // Write password to the #password input
     function writePassword() {
-      var password = generatePassword();
+      var password = getPasswordOptions();
       var passwordText = document.querySelector('#password');
     
       passwordText.value = password;
