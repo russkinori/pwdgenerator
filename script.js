@@ -115,9 +115,27 @@ function getPasswordOptions() {
     
     // Function for getting a random element from an array
     function getRandom() {
- 
       
-    }
+      let characterlength = getPasswordOptions();       //Call the user selection from the passwordOptions function
+
+      if(confirm("Would you like any upper case characters?")){
+        characterSet = characterSet.concat(upperCasedCharacters);         //Prompt option for the user to select upper case characters
+      }
+      if(confirm("Would you like any lower case characters?")){
+        characterSet = characterSet.concat(lowerCasedCharacters);         //Prompt option for the user to select lower case characters
+      }
+      if(confirm("Would you like any special characters?")){
+        characterSet = characterSet.concat(specialCharacters);            //Prompt option for the user to select special characters
+      }
+
+      if(confirm("Would you like any numbers?")){
+        characterSet = characterSet.concat(numericCharacters);           //Prompt option for the user to select numbers characters
+      }
+
+      return characterSet;
+      };
+      
+    
     
     // Function to generate password with user input
     
