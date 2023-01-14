@@ -108,11 +108,11 @@ function getPasswordOptions() {
   // Use a while loop to validate that the user input for password length is a number between 10 and 64 characters)
   while (passwordLength < 10 || passwordLength > 64 || isNaN(passwordLength)) {
 
-    passwordLength = prompt("How long would you like the password? Enter a number between 10 and 64");     //Prompt the user to choose a password length
+    passwordLength = prompt("How long would you like the password? Enter a number between 10 and 64.");     //Prompt the user to choose a password length
 
     //Use an if statement to verify that the user makes the right selection
     if (passwordLength < 10 || passwordLength > 64 || isNaN(passwordLength)) {
-      alert("Please choose a number between 10 and 64 characters");      //Alert the user to input their selection again if they made a wrong selection
+      alert("Please enter a number between 10 and 64 characters.");      //Alert the user to input their selection again if they made a wrong selection
     }
   }
   if (confirm("Would you like any upper case characters?")) {       //Prompt the user to accept or reject upper case characters
