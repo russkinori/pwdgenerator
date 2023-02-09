@@ -104,7 +104,7 @@ let passwordLength = 0;      // Create an variable to store the password length
 
 // Function to prompt user for password options
 function getPasswordOptions() {
-
+  passwordLength = 0;
   // Use a while loop to validate that the user input for password length is a number between 10 and 64 characters)
   while (passwordLength < 10 || passwordLength > 64 || isNaN(passwordLength)) {
 
